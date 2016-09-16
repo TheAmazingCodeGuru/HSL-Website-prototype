@@ -2,12 +2,15 @@ body, html{
   margin: 0;
   font: 1em "Open Snas", sans-serif;
   padding: 0px;
+  position: relative;
 }
 .nav-main{
   width: 100%;
   background-color: #222;
   color: #fff;
   overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 .nav-main > ul{
   margin: 0px;
@@ -26,7 +29,7 @@ body, html{
 }
 
 .nav-main > ul > li {
-  float: left;
+  display: inline-block;
 }
 .nav-item{
   display: inline-block;
@@ -127,19 +130,28 @@ body, html{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 @media screen and (max-width:520px){
+  .nav-main{
+    padding: 0 0 18px 0px;
+  }
   ul.topnav li{
       display: none;
   }
   .menu-icon{
     display: block;
-    position: relative;
+  }
+  .logo{
+    position: absolute;
   }
   ul.topnav.responsive li{
-    float: none;
     display: inline;
   }
   ul.topnav.responsive li a {
     display: block;
-    text-align: left;
+  }
+  .nav-main > ul{
+    float: none;
+  }
+  #the-project{
+
   }
 }

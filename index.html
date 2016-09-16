@@ -12,7 +12,14 @@
           HSL
         </div>
         <ul class="topnav" id="topnav">
-          <li><a href="#" class="nav-item">The project</a></li>
+          <div class="menu-icon">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          </div>
+          <li><a href="#" class="nav-item" id="the-project">The project</a></li>
           <li><a href="#" class="nav-item">Duchhifat 1</a>
             <div class="nav-content">
               <div class="nav-sub">
@@ -46,13 +53,6 @@
             </div>
           </li>
         </ul>
-        <div class="menu-icon">
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        </div>
         <script>
         function myFunction(x) {
           x.classList.toggle("change");
