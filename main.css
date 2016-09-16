@@ -6,8 +6,8 @@ body, html{
 .nav-main{
   width: 100%;
   background-color: #222;
-  height: 70px;
   color: #fff;
+  overflow: hidden;
 }
 .nav-main > ul{
   margin: 0px;
@@ -35,6 +35,10 @@ body, html{
   line-height: 40px;
   color: #fff;
   text-decoration: none;
+  transition: 0.3s;
+}
+.nav-item a{
+  display: inline-block;
 }
 .nav-item:hover{
   background-color:#444;
@@ -84,4 +88,58 @@ body, html{
   transition: max-height 0.4s ease;
   -webkit-transition: max-height 0.4s ease;
   -moz-transition: max-height 0.4s ease;
+}
+/*Animated menu icon*/
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 13px;
+    float: right;
+    position: relative;
+    left: -10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+.menu-icon{
+  display: none;
+}
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+@media screen and (max-width:520px){
+  ul.topnav li{
+      display: none;
+  }
+  .menu-icon{
+    display: block;
+    position: relative;
+  }
+  ul.topnav.responsive li{
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
