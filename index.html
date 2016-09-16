@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HSL</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -47,6 +48,56 @@
           </li>
         </ul>
       </nav>
+      <nav class="sidebar">
+          <div>
+
+
+        <a href="#" class="sidebar-logo-link"><div class="side-logo">
+          HSL
+        </div></a>
+        </div>
+        <ul>
+          <li><a href="#" class="sidebar-item">The project</a></li>
+          <li><a href="#" class="sidebar-item-duchifat1">Duchhifat 1 <span class="arrow"></span></a>
+            <div class="sidebar-content">
+              <div class="sidebar-sub">
+                <ul class="sidebar-ul-1">
+                  <li><a href="#"class="side-sub-items-1">Overview</a></li>
+                  <li><a href="#"class="side-sub-items-1">Hardware</a></li>
+                  <li><a href="#"class="side-sub-items-1">Software</a></li>
+                  <li><a href="#"class="side-sub-items-1">Radio</a></li>
+                  <li><a href="#"class="side-sub-items-1">Power</a></li>
+                  <li><a href="#"class="side-sub-items-1">ADCS</a></li>
+                  <li><a href="#"class="side-sub-items-1">Payload</a></li>
+                  <li><a href="#"class="side-sub-items-1">Thermodinamics</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="sidebar-item" onclick="nav_click">Duchhifat 2</a>
+            <div class="sidebar-content">
+              <div class="sidebar-sub">
+                <ul class="sidebar-ul">
+                  <li><a href="#"class="side-sub-items-2">Overview</a></li>
+                  <li><a href="#"class="side-sub-items-2">Hardware</a></li>
+                  <li><a href="#"class="side-sub-items-2">Software</a></li>
+                  <li><a href="#"class="side-sub-items-2">Radio</a></li>
+                  <li><a href="#"class="side-sub-items-2">Power</a></li>
+                  <li><a href="#"class="side-sub-items-2">ADCS</a></li>
+                  <li><a href="#"class="side-sub-items-2">Payload</a></li>
+                  <li><a href="#"class="side-sub-items-2">Thermodinamics</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <script>
+          $('.sidebar-item-duchifat1').after().click(function() {
+            $('.arrow').toggleClass('showing');
+            $('.sidebar-ul-1').toggleClass('show');
+          });
+      </script>
     </header>
   </body>
 </html>
