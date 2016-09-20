@@ -9,7 +9,6 @@ body, html{
   background-color: #222;
   color: #fff;
   overflow: hidden;
-  position: relative;
   text-align: center;
 }
 .nav-main > ul{
